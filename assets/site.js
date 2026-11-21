@@ -278,7 +278,7 @@
         acts(link(url("contact", null, "service=" + encodeURIComponent(s.title)), "Request a quote"), '<a href="mailto:' + D.email + "?subject=" + encodeURIComponent("Quote: " + s.title) + '">Email instead</a>') };
     };
     var rBrands = function rBrands() {
-      return { html: "We work with 30+ vendors, including Cisco, Huawei, Fortinet, H3C, Dell, HP, Lenovo, Samsung, Hikvision, Hytera and Motorola, and we are an <b>authorised Dahua distributor</b>." +
+      return { html: "We work with 30+ vendors, including Cisco, Huawei, Fortinet, H3C, Dell, HP, Lenovo, Samsung, Hikvision, Hytera and Motorola, and we are an <b>authorised Dahua distributor</b> globally." +
         acts(link(url("partners"), "See all partners"), link(url("contact"), "Ask about a product")) };
     };
     var rWhere = function () {
@@ -325,7 +325,7 @@
     var rPay = function () { return { html: "Payment terms are agreed per project and written into the quote. For specifics, talk to sales on " + TEL + " or at " + MAIL + "." }; };
     var rHours = function () { return { html: "Office hours aren't listed on this website. The fastest way to reach someone is to call or WhatsApp " + TEL + ", or email " + MAIL + "." + acts(CALL) }; };
     var rUrgent = function () { return { html: "If a system is down, call or WhatsApp the team right away on " + TEL + " so they can help directly. Clients on our managed IT services also get monitoring and help desk support." + acts(CALL, link(url("services", "managed"), "Managed IT services")) }; };
-    var rCountries = function () { return { html: "Our office is at Meydan Grandstand in <b>Dubai, U.A.E.</b>, and we take on projects internationally, from single buildings to long-haul fiber routes. Tell the team where your site is and they will confirm how they can support it." + acts(link(url("contact"), "Tell us your location"), CALL) }; };
+    var rCountries = function () { return { html: "Our office is at Meydan Grandstand in <b>Dubai, U.A.E.</b>, and we have delivered projects globally, including long-haul fiber along national highways. Tell the team where your site is and they will confirm how they can support it." + acts(link(url("contact"), "Tell us your location"), CALL) }; };
     var rSmall = function () { return { html: "Most of our work is for organisations: offices, hospitals, factories, telecom sites and cities. If you have a smaller site, send the details anyway and the team will tell you honestly whether it's a fit." + acts(link(url("contact"), "Send the details")) }; };
     var rWhy = function () { return { html: "Three reasons clients come back:<ul class=\"bfacts\"><li><b>One accountable team</b> from survey to support, with no hand-offs between subcontractors</li><li><b>Engineers, not salespeople</b>: 80% of our people are technical, with CCNA/CCNP and data-center-certified staff</li><li><b>Vendor-neutral</b>: 30+ partners, so we recommend what fits your site, not what one brand sells</li></ul>" + acts(link(url("about"), "About us")) }; };
     var rMission = function () { return { html: "<b>Mission:</b> foster technological innovation, adaptation and deployment, so enterprises get the best global technology, installed properly.<br><b>Vision:</b> to be the ICT partner enterprises in every sector trust most.<br><b>Values:</b> integrity, customer satisfaction, continuous improvement, transparency and partnership." + acts(link(url("about"), "Read more")) }; };

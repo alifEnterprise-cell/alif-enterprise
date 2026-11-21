@@ -1478,6 +1478,28 @@ details[open] .checks { animation: fadeUp .35s var(--ease); }
 @media (max-width: 640px) { .bot-fab { width: 60px; height: 60px; } .bot-fab .bot-av { width: 46px; height: 46px; } .bot-hint { max-width: 250px; } }
 @media (prefers-reduced-motion: reduce) { .rb-eye, .bot-fab, .bot-fab .bot-av, .bot-hint-dots i { animation: none !important; } }
 
-.bot-hint[hidden] { display: none !important; }
-.bot.open .bot-hint { display: none !important; }
-.bot-panel[hidden] { display: none !important; }
+/* footer logo: same as navbar (ink letters, blue square) on a light base strip */
+.ft-base { background: #fff; position: relative; padding-top: clamp(28px, 4vw, 48px); }
+.ft-mark { display: inline-flex; align-items: flex-end; gap: clamp(10px, 1.6vw, 22px); color: var(--ink); text-decoration: none; }
+.ft .ft-mark, .ft .ft-mark:hover { color: var(--ink); }
+.ft-logo g { fill: var(--ink); }
+.ft-logo .ft-sq { fill: var(--blue); }
+.ft-word { color: var(--ink); font-weight: 700; letter-spacing: .32em; font-size: clamp(11px, 1.5vw, 22px); line-height: 1; padding-bottom: 4.5%; }
+.ft-base .ft-meta { color: var(--muted); }
+.ft-base .ft-meta a { color: var(--muted); }
+.ft-base .to-top { color: var(--ink); border-color: var(--line); }
+.ft-base .to-top:hover { background: var(--blue); color: #fff; border-color: var(--blue); }
+@media (max-width: 880px) { .ft-word { font-size: 12px; } }
+
+.bot-hint[hidden], .bot-panel[hidden], .bot.open .bot-hint { display: none !important; }
+
+/* footer logo: white letters, dark-blue i-dot, on the blue footer */
+.ft-base { background: var(--blue); }
+.ft-mark, .ft .ft-mark, .ft .ft-mark:hover { color: #fff; }
+.ft-logo g { fill: #fff; }
+.ft-logo .ft-sq { fill: #fff; }
+.ft-word { color: #fff; }
+.ft-base .ft-meta, .ft-base .ft-meta a { color: rgba(255,255,255,.78); }
+.ft-base .ft-meta a:hover { color: #fff; }
+.ft-base .to-top { color: #fff; border-color: rgba(255,255,255,.35); }
+.ft-base .to-top:hover { background: #fff; color: var(--ink); border-color: #fff; }
