@@ -1503,3 +1503,12 @@ details[open] .checks { animation: fadeUp .35s var(--ease); }
 .ft-base .ft-meta a:hover { color: #fff; }
 .ft-base .to-top { color: #fff; border-color: rgba(255,255,255,.35); }
 .ft-base .to-top:hover { background: #fff; color: var(--ink); border-color: #fff; }
+
+/* "Our partners": one card, every partner logo in a single row */
+.proof-row.solo { grid-template-columns: 1fr; }
+.proof-row.solo .pf { flex-direction: row; align-items: center; gap: 22px; padding: 18px 0; }
+.proof-row.solo .pf-logo { width: auto; }
+.proof-row.solo .av { width: 44px; height: 44px; }
+.proof-row.solo .av:first-child { margin-left: 0; }
+@media (max-width: 640px) { .proof-row.solo .pf { flex-direction: column; align-items: flex-start; gap: 12px; } .proof-row.solo .av { width: 38px; height: 38px; } }
+.proof-row.solo .av img { width: 80%; height: 80%; }
