@@ -278,7 +278,7 @@
         acts(link(url("contact", null, "service=" + encodeURIComponent(s.title)), "Request a quote"), '<a href="mailto:' + D.email + "?subject=" + encodeURIComponent("Quote: " + s.title) + '">Email instead</a>') };
     };
     var rBrands = function rBrands() {
-      return { html: "We work with 30+ vendors, including Cisco, Huawei, Fortinet, H3C, Dell, HP, Lenovo, Samsung, Hikvision, Hytera and Motorola, and we are an <b>authorised Dahua distributor</b> globally." +
+      return { html: "We are a <b>registered partner</b> of 12 vendors: Cisco, Huawei, Fortinet, H3C, Dell, HP, Lenovo, Samsung, Hikvision, Dahua, Hytera and Motorola. We are not a distributor for any brand." +
         acts(link(url("partners"), "See all partners"), link(url("contact"), "Ask about a product")) };
     };
     var rWhere = function () {
@@ -302,7 +302,7 @@
     var svc = function (id) { return D.services.filter(function (x) { return x.id === id; })[0]; };
     var rAbout = function () {
       return { html: "<b>Alif Enterprise</b> is an engineering firm for IT and industrial automation, not a reseller. One team handles consulting, design, supply, installation and support across " + D.services.length +
-        " services, from data centers, fiber and surveillance to custom software and AI.<ul class=\"bfacts\"><li><b>10+</b> years delivering projects</li><li><b>80%</b> of the team are engineers and technicians</li><li><b>30+</b> vendor partnerships</li><li>Office in Dubai, U.A.E.</li></ul>" +
+        " services, from data centers, fiber and surveillance to custom software and AI.<ul class=\"bfacts\"><li><b>10+</b> years delivering projects</li><li><b>80%</b> of the team are engineers and technicians</li><li><b>12</b> registered vendor partners</li><li>Office in Dubai, U.A.E.</li></ul>" +
         acts(link(url("about"), "About us"), link(url("services"), "All services")),
         chips: [{ label: "What do you do?", go: rServices }, { label: "Who have you worked with?", go: rClients }, { label: "How do you work?", go: rProcess }] };
     };
@@ -327,7 +327,7 @@
     var rUrgent = function () { return { html: "If a system is down, call or WhatsApp the team right away on " + TEL + " so they can help directly. Clients on our managed IT services also get monitoring and help desk support." + acts(CALL, link(url("services", "managed"), "Managed IT services")) }; };
     var rCountries = function () { return { html: "Our office is at Meydan Grandstand in <b>Dubai, U.A.E.</b>, and we have delivered projects globally, including long-haul fiber along national highways. Tell the team where your site is and they will confirm how they can support it." + acts(link(url("contact"), "Tell us your location"), CALL) }; };
     var rSmall = function () { return { html: "Most of our work is for organisations: offices, hospitals, factories, telecom sites and cities. If you have a smaller site, send the details anyway and the team will tell you honestly whether it's a fit." + acts(link(url("contact"), "Send the details")) }; };
-    var rWhy = function () { return { html: "Three reasons clients come back:<ul class=\"bfacts\"><li><b>One accountable team</b> from survey to support, with no hand-offs between subcontractors</li><li><b>Engineers, not salespeople</b>: 80% of our people are technical, with CCNA/CCNP and data-center-certified staff</li><li><b>Vendor-neutral</b>: 30+ partners, so we recommend what fits your site, not what one brand sells</li></ul>" + acts(link(url("about"), "About us")) }; };
+    var rWhy = function () { return { html: "Three reasons clients come back:<ul class=\"bfacts\"><li><b>One accountable team</b> from survey to support, with no hand-offs between subcontractors</li><li><b>Engineers, not salespeople</b>: 80% of our people are technical, with CCNA/CCNP and data-center-certified staff</li><li><b>Vendor-neutral</b>: registered partner of 12 vendors, so we recommend what fits your site, not what one brand sells</li></ul>" + acts(link(url("about"), "About us")) }; };
     var rMission = function () { return { html: "<b>Mission:</b> foster technological innovation, adaptation and deployment, so enterprises get the best global technology, installed properly.<br><b>Vision:</b> to be the ICT partner enterprises in every sector trust most.<br><b>Values:</b> integrity, customer satisfaction, continuous improvement, transparency and partnership." + acts(link(url("about"), "Read more")) }; };
     var rBot = function () { return { html: "I'm Alif's virtual assistant. I answer from what's on this website: our services, brands, sectors, process and how to reach the team. If I can't answer something, I'll pass your question to a person." }; };
     var rComplaint = function () { return { html: "I'm sorry to hear that. Please tell the team directly so they can put it right: call " + TEL + " or email " + MAIL + " with the project name and what went wrong." + acts(CALL, '<a href="mailto:' + D.email + '?subject=Feedback">Email the team</a>') }; };
